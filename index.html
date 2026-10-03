@@ -1,137 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>DaddyBall | Coming Soon to Roseville, CA</title>
-
-  <meta name="description"
-        content="DaddyBall batting cages and baseball simulator entertainment. Coming soon to Roseville, California.">
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      min-height: 100vh;
-      background:
-        radial-gradient(circle at center top, #381010 0%, #160707 45%, #070707 100%);
-      color: white;
-      font-family: Arial, Helvetica, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .hero {
-      width: 100%;
-      max-width: 1100px;
-      padding: 60px 24px;
-    }
-
-    .brand {
-      font-size: clamp(4rem, 12vw, 9rem);
-      font-weight: 900;
-      font-style: italic;
-      line-height: .9;
-      letter-spacing: -6px;
-      margin-bottom: 35px;
-    }
-
-    .brand .daddy {
-      color: #f5f5f5;
-    }
-
-    .brand .ball {
-      color: #ef1724;
-    }
-
-    .tag {
-      display: inline-block;
-      padding: 10px 18px;
-      margin-bottom: 30px;
-      border: 1px solid #666;
-      border-radius: 30px;
-      font-size: .85rem;
-      font-weight: 700;
-      letter-spacing: 2px;
-    }
-
-    h1 {
-      font-size: clamp(3rem, 8vw, 6rem);
-      line-height: .95;
-      font-weight: 900;
-      letter-spacing: -3px;
-    }
-
-    h1 span {
-      color: #ff1724;
-    }
-
-    .slogan {
-      margin: 25px auto 0;
-      font-size: clamp(1rem, 2vw, 1.3rem);
-      line-height: 1.5;
-      color: #eee;
-    }
-
-    .coming-soon {
-      margin-top: 45px;
-      font-size: clamp(1.6rem, 4vw, 2.6rem);
-      line-height: 1.2;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-
-    .coming-soon span {
-      color: #ff1724;
-    }
-
-    footer {
-      margin-top: 60px;
-      color: #999;
-      font-size: .85rem;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DaddyBall | Coming Soon to Roseville, California</title>
+<meta name="description" content="DaddyBall batting cages and baseball simulator entertainment. Coming soon to Roseville, California.">
+<style>
+:root{--red:#f01822;--black:#050505;--white:#fff;--muted:#d5d5d5}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{min-height:100vh;background:radial-gradient(circle at 50% 8%,#2b0a0a 0%,#150707 34%,#070707 70%,#030303 100%);color:var(--white);font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;display:flex;align-items:center;justify-content:center;text-align:center}
+.hero{width:min(1100px,calc(100% - 32px));padding:44px 0 36px}
+.logo{width:min(850px,92vw);height:auto;display:block;margin:0 auto 18px;filter:drop-shadow(0 20px 38px rgba(0,0,0,.5))}
+.eyebrow{display:inline-block;border:1px solid #555;border-radius:999px;padding:9px 16px;margin:0 0 24px;font-size:.78rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;background:rgba(255,255,255,.03)}
+h1{font-size:clamp(3rem,8vw,6.4rem);line-height:.92;letter-spacing:-.055em;margin:0;font-weight:950}
+h1 span{color:var(--red)}
+.sub{font-size:clamp(1rem,2.1vw,1.28rem);line-height:1.55;color:#eee;margin:24px auto 0;max-width:780px}
+.punch{margin-top:16px;font-weight:850;color:#fff}
+.coming{margin:42px auto 0;padding-top:30px;border-top:1px solid #2c2c2c;max-width:720px;text-transform:uppercase;font-weight:950;letter-spacing:.08em;font-size:clamp(1.45rem,3vw,2.2rem);line-height:1.25}
+.coming span{display:block;color:var(--red);font-size:1.12em;margin-top:6px}
+footer{margin-top:38px;color:#999;font-size:.82rem}
+@media(max-width:600px){.hero{padding-top:28px}.logo{margin-bottom:12px}.sub{max-width:92%}.coming{margin-top:32px;padding-top:24px}}
+</style>
 </head>
-
 <body>
-
-  <main class="hero">
-
-    <div class="brand">
-      <span class="daddy">Daddy</span><span class="ball">Ball</span>
-    </div>
-
-    <div class="tag">
-      BATTING CAGES + BASEBALL SIMULATOR
-    </div>
-
-    <h1>
-      Get treated like<br>
-      <span>the coach's kid.</span>
-    </h1>
-
-    <div class="slogan">
-      More reps. Better swings. No politics.
-    </div>
-
-    <div class="coming-soon">
-      Coming Soon to<br>
-      <span>Roseville, California</span>
-    </div>
-
-    <footer>
-      DaddyBall™
-    </footer>
-
-  </main>
-
+<main class="hero">
+  <img class="logo" src="BarSign.png" alt="DaddyBall">
+  <div class="eyebrow">Batting Cages + Baseball Simulator</div>
+  <h1>Get treated like<br><span>the coach's kid.</span></h1>
+  <p class="sub">More reps. Better swings. No politics. DaddyBall is built for players who want serious work—and baseball fans who want to compete, hang out and play.</p>
+  <div class="punch">Everybody gets treated like the favorite.</div>
+  <div class="coming">Coming Soon to<span>Roseville, California</span></div>
+  <footer>DaddyBall™</footer>
+</main>
 </body>
 </html>
